@@ -1,0 +1,25 @@
+name: Tâche
+description: Préparer des données, un contenu ou une étape du projet
+title: "[Task] "
+labels:
+  - task
+body:
+  - type: textarea
+    id: result
+    attributes:
+      label: Résultat attendu
+      description: Quel livrable doit exister à la fin de cette tâche ?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critères d'acceptation
+      description: Comment une autre personne pourra-t-elle vérifier le résultat ?
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Liens et dépendances
+      description: Sources, documents ou issues à consulter, sans secrets ni données personnelles.
